@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="324.0" prefWidth="264.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rlcsimulator.CircuitSelect">
+   <children>
+      <Label alignment="CENTER" graphicTextGap="15.0" layoutX="18.0" layoutY="14.0" prefHeight="46.0" prefWidth="228.0" text="Wybierz obwód:">
+         <font>
+            <Font name="Arial Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="99.0" layoutY="244.0" mnemonicParsing="false" onAction="#openScene" text="Otwórz" />
+      <RadioButton fx:id="radioButton1" layoutX="92.0" layoutY="60.0" mnemonicParsing="false" text="RLC">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="circuit" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButton2" layoutX="92.0" layoutY="116.0" mnemonicParsing="false" text="RL" toggleGroup="$circuit">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioButton3" layoutX="92.0" layoutY="169.0" mnemonicParsing="false" text="RC" toggleGroup="$circuit">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
